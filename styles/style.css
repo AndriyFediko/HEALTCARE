@@ -1,0 +1,2273 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pageContainer {
+  width: 1650px;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  background: #95ffdb;
+  background: linear-gradient(180deg, rgba(149, 255, 219, 0.100157563) 0%, rgba(205, 233, 255, 0.3) 100%);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 15px;
+  border-radius: 2px;
+  background-image: url(../img/syringe.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.burger {
+  width: 40px;
+  height: 25px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger__row {
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #40A3F8;
+}
+
+h2 {
+  font-size: 42px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #3D3D3F;
+}
+
+.footer__select {
+  display: none;
+}
+
+.wrap {
+  width: 100%;
+  min-height: 100vh;
+  background: #95ffdb;
+  background: linear-gradient(180deg, rgba(149, 255, 219, 0.100157563) 0%, rgba(205, 233, 255, 0.3) 100%);
+}
+.wrap .firstPageBackground {
+  width: 100%;
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-color: rgba(238, 250, 255, 0.3);
+  display: flex;
+  justify-content: center;
+}
+.wrap .firstPageBackground .pageContainer header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.wrap .firstPageBackground .pageContainer header .header__left {
+  width: 50%;
+}
+.wrap .firstPageBackground .pageContainer header .header__left .logo img {
+  width: 201px;
+  cursor: pointer;
+}
+.wrap .firstPageBackground .pageContainer header .header__right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.wrap .firstPageBackground .pageContainer header .header__right nav {
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 100px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.wrap .firstPageBackground .pageContainer header .header__right nav a {
+  text-decoration: none;
+  color: #6E5F5F;
+}
+.wrap .firstPageBackground .pageContainer header .header__right nav a:nth-child(1) {
+  color: #40A3F8;
+}
+.wrap .firstPageBackground .pageContainer header .header__right nav a:last-child {
+  color: #262323;
+}
+.wrap .firstPageBackground .pageContainer header .header__right button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #40A3F8;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+.wrap .firstPageBackground .pageContainer header .header__right button:hover {
+  border: 2px solid #40A3F8;
+  color: #40A3F8;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.wrap .firstPageBackground .pageContainer main {
+  width: 100%;
+  display: flex;
+}
+.wrap .firstPageBackground .pageContainer main .main__left {
+  width: 50%;
+  height: 100%;
+  margin-top: 200px;
+  align-items: center;
+}
+.wrap .firstPageBackground .pageContainer main .main__left h2 {
+  font-size: 48px;
+  color: #3E3E3E;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.wrap .firstPageBackground .pageContainer main .main__left h2:nth-child(2) {
+  color: #40A3F8;
+  margin-top: 10px;
+}
+.wrap .firstPageBackground .pageContainer main .main__left p {
+  color: rgba(117, 117, 117, 0.46);
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  margin: 25px 0;
+  width: 521px;
+  line-height: 30px;
+}
+.wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box {
+  width: 566px;
+  height: 86px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 13px 13px 13px 13px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box input {
+  width: 216px;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(245, 246, 250, 0.52);
+  color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding-left: 30px;
+  border: none;
+  outline: none;
+}
+.wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box .workDropDown {
+  width: 203px;
+  height: 100%;
+  background-color: rgba(245, 246, 250, 0.52);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box .workDropDown img {
+  height: 35%;
+  margin-right: 5px;
+}
+.wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box .workDropDown select {
+  width: 125px;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #3D3D3F;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box .search-box {
+  width: 70px;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #40A3F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box .search-box img {
+  height: 70%;
+}
+.wrap .firstPageBackground .pageContainer main .main__right {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.wrap .firstPageBackground .pageContainer main .main__right img {
+  width: 95%;
+  margin-top: 83px;
+}
+.wrap .secondPageBackground {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrap .secondPageBackground .pageContainer {
+  padding: 100px 0;
+}
+.wrap .secondPageBackground .pageContainer .main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap .secondPageBackground .pageContainer .main h2 {
+  font-size: 42px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #3E3E3E;
+}
+.wrap .secondPageBackground .pageContainer .main .cards-container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+.wrap .secondPageBackground .pageContainer .main .cards-container article {
+  width: 342px;
+  text-align: center;
+}
+.wrap .secondPageBackground .pageContainer .main .cards-container article .card__image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+.wrap .secondPageBackground .pageContainer .main .cards-container article .card__image .icon-background {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #009eff;
+  background: linear-gradient(180deg, rgba(0, 158, 255, 0.1) 0%, rgba(56, 175, 255, 0.1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .secondPageBackground .pageContainer .main .cards-container article .card__image .icon-background img {
+  height: 50%;
+}
+.wrap .secondPageBackground .pageContainer .main .cards-container article .card__image .icon-background-yellow {
+  background: #ffaa06;
+  background: radial-gradient(circle, rgba(255, 170, 6, 0.12) 0%, rgba(255, 180, 26, 0.12) 100%);
+}
+.wrap .secondPageBackground .pageContainer .main .cards-container article .card__image .icon-background-blueHorisontal {
+  background: #5aaeff;
+  background: linear-gradient(90deg, rgba(90, 174, 255, 0.2) 0%, rgba(99, 203, 254, 0.2) 100%);
+}
+.wrap .secondPageBackground .pageContainer .main .cards-container article h4 {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #3D3D3F;
+}
+.wrap .secondPageBackground .pageContainer .main .cards-container article p {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+  line-height: 22px;
+}
+.wrap .thirdPageBackground {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrap .thirdPageBackground .pageContainer {
+  padding: 100px 0;
+}
+.wrap .thirdPageBackground .pageContainer .main {
+  width: 100%;
+  display: flex;
+}
+.wrap .thirdPageBackground .pageContainer .main .main__left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.wrap .thirdPageBackground .pageContainer .main .main__left img {
+  width: 75%;
+}
+.wrap .thirdPageBackground .pageContainer .main .main__right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text h2 {
+  width: 480px;
+}
+.wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgba(61, 61, 63, 0.7);
+  line-height: 30px;
+  width: 481px;
+  margin-top: 30px;
+}
+.wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text ul {
+  margin-top: 20px;
+}
+.wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text ul li {
+  font-size: 16px;
+  font-weight: 300;
+  color: #3D3D3F;
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+  list-style: none;
+  margin-top: 10px;
+}
+.wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text ul li::before {
+  content: url(../img/testdaw.svg);
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
+}
+.wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #40A3F8;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+.wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text button img {
+  width: 15px;
+}
+.wrap .fourthPageBackground {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrap .fourthPageBackground .pageContainer {
+  padding: 100px 0;
+}
+.wrap .fourthPageBackground .pageContainer .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.wrap .fourthPageBackground .pageContainer .main p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgba(61, 61, 63, 0.7);
+  line-height: 30px;
+  margin-top: 10px;
+  width: 480px;
+  text-align: center;
+}
+.wrap .fourthPageBackground .pageContainer .main .servisesCardContainer {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.wrap .fourthPageBackground .pageContainer .main .servisesCardContainer article {
+  width: 350px;
+  height: 316px;
+  background: linear-gradient(138.88deg, rgba(254, 254, 254, 0) -2.44%, #F9F9F9 -2.43%, rgba(254, 254, 254, 0.51) 98.26%);
+  filter: drop-shadow(0px 4px 120px rgba(0, 0, 0, 0.05));
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap .fourthPageBackground .pageContainer .main .servisesCardContainer article .serviseCardImage {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.wrap .fourthPageBackground .pageContainer .main .servisesCardContainer article .serviseCardImage img {
+  height: 50%;
+  margin-bottom: 30px;
+}
+.wrap .fourthPageBackground .pageContainer .main .servisesCardContainer article h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #3D3D3F;
+  font-family: "Roboto", sans-serif;
+}
+.wrap .fourthPageBackground .pageContainer .main .servisesCardContainer article p {
+  width: 224px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.wrap .fourthPageBackground .pageContainer .main .servisesSliderIndicator {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrap .fourthPageBackground .pageContainer .main .servisesSliderIndicator .servisesSliderIndicator__container {
+  width: 159px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.wrap .fourthPageBackground .pageContainer .main .servisesSliderIndicator .servisesSliderIndicator__container .circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #DBE8EE;
+  cursor: pointer;
+}
+.wrap .fourthPageBackground .pageContainer .main .servisesSliderIndicator .servisesSliderIndicator__container .circle:nth-child(1) {
+  width: 60px;
+  border-radius: 20px;
+  background-color: #40A3F8;
+}
+.wrap .fifthPageBackground {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrap .fifthPageBackground .pageContainer {
+  width: 1650px;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap .fifthPageBackground .pageContainer img {
+  width: 100px;
+  margin: 20px 0;
+}
+.wrap .fifthPageBackground .pageContainer p {
+  color: #3D3D3FB2;
+  width: 500px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  line-height: 30px;
+}
+.wrap .fifthPageBackground .pageContainer .main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer {
+  width: 1200px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer article {
+  width: 267px;
+  height: 400px;
+  box-shadow: 0 0 120px rgba(0, 0, 0, 0.05);
+  border: 1px solid #EEEFF1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+.wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer article .card__Image {
+  width: 100%;
+  height: 65%;
+  padding: 13px;
+}
+.wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer article .card__Image img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer article h4 {
+  color: #3D3D3F;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer article p {
+  width: auto;
+  color: #999999;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer article .card__socialNetworks {
+  width: 132px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer article .card__socialNetworks img {
+  width: 31px;
+  cursor: pointer;
+}
+.wrap .fifthPageBackground .pageContainer .main button {
+  width: 195px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #40A3F8;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 60px;
+}
+.wrap .fifthPageBackground .pageContainer .main button:hover {
+  border: 2px solid #40A3F8;
+  color: #40A3F8;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.wrap .sixthpageBackground {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrap .sixthpageBackground .pageContainer {
+  width: 1650px;
+  padding: 100px 0;
+}
+.wrap .sixthpageBackground .pageContainer .main {
+  width: 100%;
+  display: flex;
+}
+.wrap .sixthpageBackground .pageContainer .main .main__left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.wrap .sixthpageBackground .pageContainer .main .main__left img {
+  width: 75%;
+}
+.wrap .sixthpageBackground .pageContainer .main .main__right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .sixthpageBackground .pageContainer .main .main__right h2 {
+  width: 478px;
+}
+.wrap .sixthpageBackground .pageContainer .main .main__right p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(61, 61, 63, 0.7);
+  font-family: 'Roboto';
+  width: 496px;
+  margin-top: 20px;
+}
+.wrap .sixthpageBackground .pageContainer .main .main__right .downloadApp {
+  display: flex;
+  margin-top: 40px;
+}
+.wrap .sixthpageBackground .pageContainer .main .main__right .downloadApp img {
+  width: 156px;
+  cursor: pointer;
+}
+.wrap .sixthpageBackground .pageContainer .main .main__right .downloadApp img:last-child {
+  margin-left: 20px;
+}
+.wrap .seventhPageBackground {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrap .seventhPageBackground .pageContainer {
+  width: 1650px;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap .seventhPageBackground .pageContainer .main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__leftButton {
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(133.16deg, rgba(154, 208, 255, 0.3065) 0%, rgba(111, 188, 255, 0.2005) 112.21%);
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__leftButton img {
+  height: 50%;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox {
+  display: flex;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article {
+  width: 370px;
+  height: 350px;
+  background: linear-gradient(132.1deg, rgba(255, 255, 255, 0.88) 0.65%, #FAFAFA 103.13%);
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .card__sign {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .card__sign img {
+  width: 40px;
+  margin-right: 80px;
+  position: relative;
+  top: -10px;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userPhoto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userPhoto img {
+  width: 73px;
+  height: 73px;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo {
+  padding-left: 45px;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo h4 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #3D3D3F;
+  margin-top: 20px;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo h4::after {
+  content: '★★★★★';
+  font-size: 20px;
+  color: orange;
+  margin-left: 60px;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo h5 {
+  color: #47C2FF;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  margin-top: 3px;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo p {
+  width: 305px;
+  color: #454D5D;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 22px;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article:nth-child(2) {
+  margin: 0 30px;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__rightButton {
+  width: 35px;
+  height: 35px;
+  background: #40A3F8;
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__rightButton img {
+  height: 50%;
+}
+.wrap .eigthPageBackground {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrap .eigthPageBackground .pageContainer {
+  width: 1650px;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+.wrap .eigthPageBackground .pageContainer .subscribe-block {
+  width: 1180px;
+  height: 340px;
+  background-color: #40A3F8;
+  border-radius: 12px;
+  background-image: url(../img/bluepagebackground.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+.wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__left .textContainer h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  width: 402px;
+}
+.wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__left .textContainer button {
+  width: 205px;
+  height: 52px;
+  background-color: white;
+  color: #40A3F8;
+  border: none;
+  border-radius: 5px;
+  margin-top: 25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__left .textContainer button:hover {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+}
+.wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__right img {
+  height: 130%;
+}
+.wrap footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 100px;
+}
+.wrap footer .pageContainer {
+  width: 1180px !important;
+}
+.wrap footer .pageContainer .main {
+  width: 100%;
+}
+.wrap footer .pageContainer .main .main__top {
+  width: 100%;
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap footer .pageContainer .main .main__top .contscts img {
+  width: 201px;
+}
+.wrap footer .pageContainer .main .main__top .contscts p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 20px;
+  color: #646464;
+}
+.wrap footer .pageContainer .main .main__top .contscts .contacts__socialNetwirks {
+  width: 176px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.wrap footer .pageContainer .main .main__top .contscts .contacts__socialNetwirks img {
+  width: 32px;
+  cursor: pointer;
+}
+.wrap footer .pageContainer .main .main__top .info {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+.wrap footer .pageContainer .main .main__top .info ul li:nth-child(1) {
+  font-size: 18px;
+  color: #323232;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+.wrap footer .pageContainer .main .main__top .info ul li {
+  list-style: none;
+  font-size: 16px;
+  color: #646464;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.wrap footer .pageContainer .main .main__top .subscribe {
+  display: flex;
+  flex-direction: column;
+}
+.wrap footer .pageContainer .main .main__top .subscribe h4 {
+  font-size: 18px;
+  color: #323232;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.wrap footer .pageContainer .main .main__top .subscribe p {
+  color: #646464;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  width: 270px;
+  margin-top: 25px;
+}
+.wrap footer .pageContainer .main .main__top .subscribe input {
+  width: 100%;
+  height: 45px;
+  border: 1.1px solid #E1E2E4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(117, 117, 117, 0.65);
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  margin-top: 20px;
+}
+.wrap footer .pageContainer .main .main__top .subscribe button {
+  width: 100%;
+  height: 45px;
+  margin-top: 15px;
+  background-color: #40A3F8;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.wrap footer .pageContainer .main .main__top .subscribe button:hover {
+  border: 2px solid #40A3F8;
+  color: #40A3F8;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.wrap footer .footer__bottom {
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid #dadada;
+  display: flex;
+  justify-content: center;
+}
+.wrap footer .footer__bottom .container {
+  width: 1180px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap footer .footer__bottom .container p {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #646464;
+}
+.wrap footer .footer__bottom .container ul {
+  display: flex;
+}
+.wrap footer .footer__bottom .container ul li {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #646464;
+  list-style: none;
+}
+.wrap footer .footer__bottom .container ul li:nth-child(2) {
+  margin: 0 50px;
+}
+
+@media screen and (max-width: 1780px) {
+  .pageContainer {
+    width: 1550px !important;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__right img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1680px) {
+  .pageContainer {
+    width: 1450px !important;
+  }
+}
+@media screen and (max-width: 1580px) {
+  .pageContainer {
+    width: 1350px !important;
+  }
+
+  .wrap .firstPageBackground .pageContainer header .header__right nav {
+    width: 368px;
+  }
+
+  .wrap .firstPageBackground .pageContainer header {
+    justify-content: space-between;
+  }
+
+  .wrap .firstPageBackground .pageContainer header .header__left {
+    width: auto;
+  }
+
+  .wrap .firstPageBackground .pageContainer header .header__right {
+    width: auto;
+  }
+}
+@media screen and (max-width: 1480px) {
+  .pageContainer {
+    width: 1250px !important;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left h2 {
+    font-size: 42px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left {
+    margin-top: 200px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left p {
+    margin: 20px 0;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box {
+    width: 480px;
+    height: 76px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box input {
+    width: 178px;
+    padding-left: 20px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box .workDropDown {
+    width: 185px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box .search-box {
+    width: 60px;
+  }
+
+  .wrap .firstPageBackground .pageContainer header .header__right nav {
+    font-size: 16px;
+  }
+
+  .wrap .secondPageBackground .pageContainer .main h2 {
+    font-size: 36px;
+  }
+
+  .wrap .secondPageBackground .pageContainer {
+    padding: 80px 0;
+  }
+
+  .wrap .thirdPageBackground .pageContainer {
+    padding: 80px 0;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text h2 {
+    font-size: 36px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text p {
+    margin: 15px 0 0px 0;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .wrap .fourthPageBackground .pageContainer {
+    padding: 80px 0;
+  }
+
+  .wrap .fifthPageBackground .pageContainer {
+    padding: 80px 0;
+  }
+
+  .wrap .sixthpageBackground .pageContainer {
+    padding: 80px 0;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article {
+    width: 346px;
+    height: 348px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo h4::after {
+    margin-left: 48px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo p {
+    font-size: 14px;
+    width: 264px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block {
+    width: 1100px;
+    height: 320px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__left .textContainer h3 {
+    font-size: 38px;
+  }
+
+  .wrap footer .pageContainer {
+    width: 1100px !important;
+  }
+
+  .wrap footer .footer__bottom .container {
+    width: 1100px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer {
+    padding: 80px 0;
+  }
+
+  .wrap footer .footer__bottom .container {
+    width: 1100px;
+  }
+
+  .wrap footer {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .pageContainer {
+    width: 1150px !important;
+  }
+
+  .wrap .firstPageBackground .pageContainer header .header__right nav {
+    margin-right: 70px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left h2 {
+    font-size: 38px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left h2:nth-child(2) {
+    margin-top: 5px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left p {
+    margin: 15px 0;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left {
+    margin-top: 185px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__right img {
+    position: relative;
+    left: 20px;
+  }
+
+  .wrap .secondPageBackground .pageContainer .main .cards-container {
+    width: 1100px;
+  }
+
+  .wrap .secondPageBackground .pageContainer .main h2 {
+    font-size: 32px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text h2 {
+    font-size: 32px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text p {
+    font-size: 16px;
+    width: 428px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__left img {
+    width: 500px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text ul {
+    margin-top: 10px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text button {
+    margin-top: 14px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .wrap .fourthPageBackground .pageContainer .main .servisesCardContainer article {
+    width: 300px;
+    height: 275px;
+  }
+
+  .wrap .fourthPageBackground .pageContainer .main .servisesCardContainer {
+    width: 970px;
+  }
+
+  .wrap .fourthPageBackground .pageContainer .main .servisesCardContainer article p {
+    margin-top: 6px;
+  }
+
+  .wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer article {
+    width: 210px;
+    height: 325px;
+  }
+
+  .wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer article .card__socialNetworks img {
+    width: 28px;
+    margin: 10px 0 0 0;
+  }
+
+  .wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer article h4 {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+
+  .wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer article p {
+    font-size: 14px;
+  }
+
+  .wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer {
+    width: 910px;
+  }
+
+  .wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer {
+    margin-top: 40px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo p {
+    font-size: 12px;
+    margin-top: 7px;
+    width: 254px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo h4 {
+    font-size: 18px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo h5 {
+    font-size: 13px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo h4::after {
+    font-size: 18px;
+    margin-left: 30px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article {
+    width: 317px;
+    height: 320px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block {
+    width: 1000px;
+    height: 300px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__left .textContainer h3 {
+    width: 299px;
+    font-size: 32px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__left .textContainer button {
+    width: 182px;
+    height: 44px;
+    font-size: 16px;
+  }
+
+  .wrap footer .pageContainer {
+    width: 1000px !important;
+  }
+
+  .wrap footer .footer__bottom .container {
+    width: 1000px;
+  }
+
+  .wrap footer .footer__bottom .container {
+    width: 1000px;
+  }
+
+  .wrap footer .pageContainer .main .main__top .info {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .pageContainer {
+    width: 1050px !important;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left {
+    margin-top: 165px;
+  }
+
+  .wrap .secondPageBackground .pageContainer {
+    padding: 70px 0;
+  }
+
+  .wrap .thirdPageBackground .pageContainer {
+    padding: 70px 0;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__left {
+    justify-content: flex-start;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right {
+    justify-content: flex-end;
+  }
+
+  .wrap .fourthPageBackground .pageContainer {
+    padding: 70px 0;
+  }
+
+  .wrap .fifthPageBackground .pageContainer {
+    padding: 70px 0;
+  }
+
+  .wrap .sixthpageBackground .pageContainer {
+    padding: 70px 0;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__right p {
+    font-size: 16px;
+    width: 389px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo p {
+    width: 236px;
+    line-height: 18px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo {
+    padding-left: 30px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article {
+    width: 280px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block {
+    width: 900px;
+    height: 250px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__left .textContainer h3 {
+    font-size: 28px;
+    width: 261px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__left .textContainer button {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .wrap footer .pageContainer {
+    width: 900px !important;
+  }
+
+  .wrap footer .footer__bottom .container {
+    width: 900px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer {
+    padding: 70px 0;
+  }
+
+  .wrap footer .footer__bottom .container {
+    width: 900px;
+  }
+
+  .wrap footer {
+    margin-top: 70px;
+  }
+
+  .wrap footer .pageContainer .main .main__top .info {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .pageContainer {
+    width: 950px !important;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__right img {
+    margin-top: 40px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left {
+    margin-top: 120px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box {
+    width: 444px;
+    height: 70px;
+    padding: 11px 10px 11px 10px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box .search-box {
+    width: 52px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box .workDropDown {
+    width: 170px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box input {
+    width: 166px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left p {
+    line-height: 24px;
+    font-size: 14px;
+    width: 456px;
+  }
+
+  .wrap .firstPageBackground .pageContainer header .header__right nav {
+    width: 300px;
+    font-size: 15px;
+    margin-right: 50px;
+  }
+
+  .wrap .firstPageBackground .pageContainer header .header__right button {
+    width: 120px;
+    height: 44px;
+    font-size: 14px;
+  }
+
+  .wrap .firstPageBackground .pageContainer header .header__left .logo img {
+    width: 165px;
+  }
+
+  .wrap .secondPageBackground .pageContainer .main .cards-container article {
+    width: 284px;
+  }
+
+  .wrap .secondPageBackground .pageContainer .main .cards-container article h4 {
+    font-size: 20px;
+  }
+
+  .wrap .secondPageBackground .pageContainer .main .cards-container article p {
+    font-size: 13px;
+  }
+
+  .wrap .secondPageBackground .pageContainer .main .cards-container article .card__image .icon-background {
+    width: 80px;
+    height: 80px;
+  }
+
+  .wrap .secondPageBackground .pageContainer .main .cards-container {
+    width: 980px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__left img {
+    width: 450px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text {
+    width: 422px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text button {
+    width: 178px;
+    height: 43px;
+    font-size: 14px;
+    padding: 0 18px;
+  }
+
+  .wrap .fifthPageBackground .pageContainer .main button {
+    width: 170px;
+    height: 44px;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article {
+    width: 260px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo h4::after {
+    font-size: 16px;
+    margin-left: 22px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo {
+    padding-left: 20px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block {
+    width: 835px;
+  }
+
+  .wrap footer .pageContainer {
+    width: 950px !important;
+  }
+
+  .wrap footer .footer__bottom .container {
+    width: 950px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  .pageContainer {
+    width: 850px !important;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left {
+    margin-top: 100px;
+  }
+
+  .wrap .secondPageBackground .pageContainer .main .cards-container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .wrap .secondPageBackground .pageContainer .main .cards-container article {
+    margin: 20px 20px;
+  }
+
+  .wrap .secondPageBackground .pageContainer {
+    padding: 60px 0;
+  }
+
+  .wrap .thirdPageBackground .pageContainer {
+    padding: 60px 0;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text ul li {
+    line-height: 18px;
+    font-size: 14px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text {
+    width: 373px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text p {
+    width: 100%;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text h2 {
+    width: 100%;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .wrap .fourthPageBackground .pageContainer {
+    padding: 60px 0;
+  }
+
+  .wrap .fourthPageBackground .pageContainer .main .servisesCardContainer article:nth-child(1) {
+    display: none;
+  }
+
+  .wrap .fourthPageBackground .pageContainer .main .servisesCardContainer {
+    width: 635px;
+  }
+
+  .wrap .fourthPageBackground .pageContainer .main p {
+    font-size: 16px;
+    width: 436px;
+    line-height: 24px;
+  }
+
+  .wrap .fifthPageBackground .pageContainer p {
+    font-size: 16px;
+    width: 436px;
+    line-height: 24px;
+  }
+
+  .wrap .fifthPageBackground .pageContainer {
+    padding: 60px 0;
+  }
+
+  .wrap .sixthpageBackground .pageContainer {
+    padding: 60px 0;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__right p {
+    margin-top: 12px;
+    line-height: 26px;
+    width: 100%;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__right .downloadApp img {
+    width: 116px;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__right .downloadApp img:last-child {
+    margin-left: 15px;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__right .downloadApp {
+    margin-top: 20px;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__right .main__right-textBox {
+    width: 389px;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__right h2 {
+    width: 100%;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__right {
+    justify-content: flex-end;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__left {
+    justify-content: flex-start;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo p {
+    width: 189px;
+    line-height: 16px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo h4 {
+    font-size: 16px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo h4::after {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo h5 {
+    font-size: 12px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article {
+    width: 225px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .card__sign img {
+    margin-right: 40px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main {
+    margin-top: 60px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block {
+    width: 735px;
+    height: 225px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer {
+    padding: 60px 0;
+  }
+
+  .wrap footer .pageContainer {
+    width: 850px !important;
+  }
+
+  .wrap footer .footer__bottom .container {
+    width: 850px;
+  }
+
+  .wrap footer {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .pageContainer {
+    width: 750px !important;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left {
+    margin-top: 70px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left h2 {
+    font-size: 30px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left p {
+    font-size: 13px;
+    width: 387px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box {
+    width: 380px;
+    height: 60px;
+    padding: 11px 10px 11px 10px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box input {
+    width: 140px;
+    padding-left: 15px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box .workDropDown select {
+    width: 106px;
+    font-size: 12px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box .workDropDown {
+    width: 145px;
+    border-radius: 5px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box .search-box {
+    width: 45px;
+    border-radius: 5px;
+  }
+
+  .wrap .secondPageBackground .pageContainer .main h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .wrap .secondPageBackground .pageContainer .main .cards-container {
+    margin-top: 50px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text h2 {
+    font-size: 24px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__left img {
+    width: 414px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text ul li:nth-child(1) {
+    text-align: center;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text p {
+    font-size: 14px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text {
+    width: 310px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer article:nth-child(4) {
+    display: none;
+  }
+
+  .wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer {
+    width: 678px;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__right .main__right-textBox {
+    width: 368px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo p {
+    width: 100%;
+    padding-right: 10px;
+    line-height: 15px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo h4::after {
+    margin-left: 14px;
+    font-size: 14px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article {
+    width: 200px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo {
+    padding-left: 15px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article .userInfo h4 {
+    font-size: 15px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article:nth-child(2) {
+    margin: 0 20px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block {
+    width: 635px;
+    height: 200px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__left .textContainer h3 {
+    font-size: 24px;
+    width: 224px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__left .textContainer button {
+    width: 146px;
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .wrap footer .pageContainer {
+    width: 650px !important;
+  }
+
+  .wrap footer .footer__bottom .container {
+    width: 650px;
+  }
+
+  .wrap footer .pageContainer .main .main__top .subscribe p {
+    width: 209px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .wrap footer .pageContainer .main .main__top .contscts img {
+    width: 172px;
+  }
+
+  .wrap footer .pageContainer .main .main__top .contscts p {
+    width: 180px;
+  }
+
+  .wrap footer .pageContainer .main .main__top .info {
+    width: 168px;
+  }
+
+  .wrap footer .pageContainer .main .main__top .info ul li {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+
+  .wrap footer .pageContainer .main .main__top .info ul li:nth-child(1) {
+    font-size: 16px;
+  }
+
+  .wrap footer .pageContainer .main .main__top .subscribe button {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .wrap footer .pageContainer .main .main__top .subscribe input {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .wrap footer .pageContainer .main .main__top .contscts .contacts__socialNetwirks img {
+    width: 28px;
+  }
+
+  .wrap footer .pageContainer .main .main__top .contscts .contacts__socialNetwirks {
+    width: 150px;
+  }
+
+  .wrap footer .footer__bottom {
+    height: 65px;
+  }
+
+  .wrap footer .footer__bottom .container ul li {
+    font-size: 12px;
+  }
+
+  .wrap footer .footer__bottom .container p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 830px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .pageContainer {
+    width: 90% !important;
+  }
+
+  .wrap .firstPageBackground .pageContainer main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__right img {
+    left: 0;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .pageContainer {
+    width: 90%;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left h2 {
+    text-align: center;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left p {
+    text-align: center;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box .workDropDown {
+    height: 50px;
+    width: 100%;
+    margin: 11px 0;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box .workDropDown select {
+    width: 115px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box input {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box .search-box {
+    width: 100%;
+    height: 50px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__right img {
+    width: 500px;
+  }
+
+  .firstPageBackground .pageContainer {
+    padding-bottom: 50px;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .wrap .firstPageBackground .pageContainer header .header__right nav {
+    display: none;
+  }
+
+  .wrap .firstPageBackground .pageContainer header .header__right button {
+    display: none;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main {
+    flex-direction: column;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text {
+    width: 400px;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text h2 {
+    text-align: center;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text p {
+    text-align: center;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text ul li {
+    text-align: start;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main {
+    flex-direction: column;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__left {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__right {
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__right h2 {
+    text-align: center;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__right p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__right .downloadApp {
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__left img {
+    width: 450px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__leftButton {
+    width: 30px;
+    height: 30px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__rightButton {
+    width: 30px;
+    height: 30px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article:nth-child(1) {
+    display: none;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article:nth-child(2) {
+    margin: 0 10px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article {
+    margin: 0 10px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block {
+    width: 100%;
+    height: 400px;
+    flex-direction: column-reverse;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__left {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__left .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__right {
+    width: 100%;
+    height: 50%;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__left .textContainer h3 {
+    text-align: center;
+  }
+
+  .wrap footer .pageContainer {
+    width: 90% !important;
+  }
+
+  .wrap footer .footer__bottom .container {
+    width: 90%;
+  }
+
+  .wrap footer .pageContainer .main .main__top .info ul {
+    display: none;
+  }
+
+  .footer__select {
+    display: flex;
+    width: 209px;
+    height: 50px;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    color: #3E3E3E;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .wrap footer .pageContainer .main .main__top .info {
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 40px 0;
+  }
+
+  .wrap footer .pageContainer .main .main__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrap footer .pageContainer .main .main__top .contscts p {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .wrap footer .pageContainer .main .main__top .contscts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrap footer .pageContainer .main .main__top .subscribe h4 {
+    text-align: center;
+  }
+
+  .wrap footer .pageContainer .main .main__top .subscribe p {
+    text-align: center;
+  }
+
+  .wrap footer .footer__bottom .container ul {
+    display: none;
+  }
+
+  .wrap footer .footer__bottom .container {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer article:nth-child(3) {
+    display: none;
+  }
+
+  .wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .wrap .fourthPageBackground .pageContainer .main .servisesCardContainer article:nth-child(2) {
+    display: none;
+  }
+
+  .wrap .fourthPageBackground .pageContainer .main .servisesCardContainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .wrap .fourthPageBackground .pageContainer .main .servisesSliderIndicator .servisesSliderIndicator__container {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__centerBox article:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .wrap .firstPageBackground .pageContainer main .main__right img {
+    width: 100%;
+  }
+
+  .wrap .firstPageBackground .pageContainer header .header__left .logo img {
+    margin-top: 5px;
+    width: 140px;
+  }
+
+  .burger {
+    width: 40px;
+    height: 20px;
+  }
+
+  .burger__row {
+    height: 4px;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left h2 {
+    font-size: 28px;
+  }
+
+  .wrap .secondPageBackground .pageContainer {
+    padding: 50px 0;
+  }
+
+  .wrap .thirdPageBackground .pageContainer {
+    padding: 50px 0;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__left img {
+    width: 100%;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text ul li:nth-child(1) {
+    text-align: center;
+  }
+
+  .wrap .thirdPageBackground .pageContainer .main .main__right .main__right-text ul li {
+    text-align: center;
+  }
+
+  .wrap .fourthPageBackground .pageContainer {
+    padding: 50px 0;
+  }
+
+  .wrap .fourthPageBackground .pageContainer .main p {
+    width: 100%;
+  }
+
+  .wrap .fourthPageBackground .pageContainer .main .servisesCardContainer article p {
+    width: 188px;
+    font-size: 12px;
+  }
+
+  .wrap .fourthPageBackground .pageContainer .main .servisesCardContainer article {
+    width: 250px;
+    height: 260px;
+  }
+
+  .wrap .fourthPageBackground .pageContainer .main p {
+    font-size: 15px;
+  }
+
+  .wrap .fifthPageBackground .pageContainer {
+    padding: 50px 0;
+  }
+
+  .wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer article:nth-child(2) {
+    display: none;
+  }
+
+  .wrap .fifthPageBackground .pageContainer .main .doctorsCardsContainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__left img {
+    width: 100%;
+  }
+
+  .wrap .sixthpageBackground .pageContainer .main .main__right .main__right-textBox {
+    width: 100%;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__rightButton {
+    width: 25px;
+    height: 25px;
+  }
+
+  .wrap .seventhPageBackground .pageContainer .main .reviewsCardsContainer .reviewsCardsContainer__leftButton {
+    height: 25px;
+    width: 25px;
+  }
+
+  .wrap .eigthPageBackground .pageContainer .subscribe-block .subscribe-block__right img {
+    height: 120%;
+  }
+
+  .wrap footer {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 490px) {
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .wrap .fifthPageBackground .pageContainer p {
+    width: 100%;
+  }
+
+  .wrap .fifthPageBackground .pageContainer {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .wrap .firstPageBackground .pageContainer main .main__left h2 {
+    width: 100%;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left p {
+    width: 100%;
+  }
+
+  .wrap .firstPageBackground .pageContainer main .main__left .yourInfo-box {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
